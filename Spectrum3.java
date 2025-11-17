@@ -824,31 +824,31 @@ class MyButtonHandler implements ActionListener
       case "IR":
 	if (activeLights[air]) 
 	 {activeLights[air] = false;
-	  sp.b9.setBackground(inactive);
+	  sp.b10.setBackground(inactive);
 	 }
 	else
 	 {activeLights[air] = true;
-	  sp.b9.setBackground(activated);
+	  sp.b10.setBackground(activated);
 	 }
 	break;
       case "UV":
 	if (activeLights[auv]) 
 	 {activeLights[auv] = false;
-	  sp.b10.setBackground(inactive);
+	  sp.b11.setBackground(inactive);
 	 }
 	else
 	 {activeLights[auv] = true;
-	  sp.b10.setBackground(activated);
+	  sp.b11.setBackground(activated);
 	 }
 	break;
       case "F1":
 	if (activeLights[af1]) 
 	 {activeLights[af1] = false;
-	  sp.b11.setBackground(inactive);
+	  sp.b12.setBackground(inactive);
 	 }
 	else
 	 {activeLights[af1] = true;
-	  sp.b11.setBackground(activated);
+	  sp.b12.setBackground(activated);
 	 }
 	break;
 
@@ -869,11 +869,11 @@ class MyButtonHandler implements ActionListener
       case "F2":
 	if (testLights) {
 	  sp.turnOffActiveLED();
-	  sp.b12.setBackground(inactive);
+	  sp.b9.setBackground(inactive);
 	  testLights = false;
 	  }
 	else {
-	  sp.b12.setBackground(activated);
+	  sp.b9.setBackground(activated);
 	  sp.turnOnActiveLED();
 	  testLights = true;
 	  }
