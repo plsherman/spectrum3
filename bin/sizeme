@@ -1,0 +1,73 @@
+# get summaries of larger directories/files
+# Options added for usability
+#   -c nnn	count of output files (for all files) default 20
+#   -n		sort by name instead of file size
+
+
+# Maintenance history - Author: Philip Sherman 
+# 2007/11/02	Original authoring
+
+# original command when no parameters
+if [ $# -eq 0 ]; then
+  echo "Kb     Directory/File"
+  du -cks *| sort -rn | head -21
+  exit 0
+fi
+
+for i in "-h" "-H" "--help" "--HELP" "--Help" "-?"; do
+  if [ "$1" = "$i" ]; then
+    echo "sizeme [-c nnn] [-s] [fn [fn ... fn]]"
+    echo "  -c  count of output lines - default 20"
+    echo "  -n  sort output by name, not size (all files/dirs listed)"
+    echo "  fn  partial identifier of directories/files to be examined"
+    echo "     fn* will be used to limit files/directories"
+    echo "     use \"*fn\" (quotes required) to force off 1st char of name"
+    echo ""
+    echo "  Examples:"
+    echo "    sizeme		list 20 largest files/dirs below current dir"
+    echo "    sizeme -n 20	list 20 files/dirs matching 20*"
+    echo "    sizeme -n "*00"	list 20 files/dirs matching *00*"
+    echo "    sizeme -c 50 "*00" list 50 files/dirs matching *00*"
+    exit 0
+  fi
+done
+
+namesort="f"
+scandirs=""
+outcountDefault=20
+outcount=$outcountDefault
+
+for i in $*; do
+  if [ $outcount -eq 0 ]; then 
+    outcount=$i
+    outcount=$(( $outcount - 1 ))
+    continue
+  fi
+  if [ "$i" = "-c" ]; then
+    outcount=0
+    continue
+  fi
+  if [ $i = "-n" ]; then
+    namesort="t"
+    continue
+  fi
+  scandirs=$scandirs$i"* "
+done
+
+if [ "$scandirs" = "" ]; then
+  scandirs="*"
+  fi
+if [ $outcount -eq -1 ]; then
+  outcount=$(( $outcountDefault + 1 ))
+else
+  outcount=$(( $outcount + 2 ))
+fi
+#echo "scandirs: $scandirs"
+
+if [ "$namesort" = "t" ]; then
+# echo "  du -cks $scandirs | sort -k 2 | head -$outcount"
+  du -cks $scandirs | sort -k 2
+else
+# echo "  du -cks $scandirs | sort -rn | head -$outcount"
+  du -cks $scandirs | sort -rn | head -$outcount
+  fi

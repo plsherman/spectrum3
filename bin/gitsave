@@ -1,0 +1,1 @@
+cp -p $@ /home/spectrum/gitRepos/spectrum2

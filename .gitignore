@@ -1,0 +1,10 @@
+*.class
+bin2
+*.yuv
+*.dat
+*.jpg
+*.out
+*.txt
+*.pptx
+*.tgz
+.gitignore

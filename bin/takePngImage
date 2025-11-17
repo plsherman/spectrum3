@@ -1,0 +1,1 @@
+sudo raspistill -v -o test.png -cfx 128:128 -mm average -ex sports -ss 2000000 -e png -ISO 100

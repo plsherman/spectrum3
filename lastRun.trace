@@ -1,0 +1,181 @@
+--------------------------------------------
+Pi4J - Launching: Spectrum3
+--------------------------------------------
+executing Spectrum [tracer runOnPi] ]true false]
+spectrum.init()
+Analyze2.init()
+Highest nm in graphs is: 966
+  'aarch64', false
+spectrum.buildButonPanel()
+spectrum.buildMessagePanel()
+spectrum.rebuildInitialPanel()
+Spectrum.setupIOPins()
+MyButtonHandler.actionPerformed(white)
+MyButtonHandler.actionPerformed(chambers)
+Spectrum.normalizeChambers()
+Spectrum.cuvetteLightOff(runOnPi=true)
+spectrum.turnOffActiveLED()
+Analyze2.getDarkFrame()
+Analyze2.invokeCommand(darkFrame20250805_172757.dat,60000
+Analyze2.invokeCommand([./cam1.py, darkFrame20250805_172757.dat, 60000, true])
+  return code is: 0
+Analyze2.readSpectra(darkFrame20250805_172757.dat)
+Analyze2.readSpectraB(darkFrame20250805_172757.dat)
+Analyze2.deleteImageFile(darkFrame20250805_172757.dat)
+Spectrum.cuvetteLightOn(runOnPi=true)
+spectrum.turnOnActiveLED()
+Analyze2.calibrateSpheres() tracer2=false
+Analyze2.invokeCommand(sphereNormalization20250805_172801.dat,60000
+Analyze2.invokeCommand([./cam1.py, sphereNormalization20250805_172801.dat, 60000, true])
+  return code is: 0
+Analyze2.readSpectra(sphereNormalization20250805_172801.dat)
+Analyze2.readSpectraB(sphereNormalization20250805_172801.dat)
+Analyze2.deleteImageFile(sphereNormalization20250805_172801.dat)
+Analyze2.subtractSpectra[][]()
+Analyze2.sumSpectrum(int[], 110,  150)
+  writing spectraSum110.dat
+Analyze2.sumSpectrum(int[], 950,  990)
+  writing spectraSum950.dat
+Analyze2.alignSpectra()
+nmScaleLength valueEnd 1525 966.9840737999999 967.6189943999999
+Analyze2.adjustSpectraScale(int,float)
+input scale size value      1525 967.6189943999999
+outputNmMaxValue            963
+nmPerPixel                  0.6349206
+inputNmppLowDecrementFactor 0.3174603
+  slit peak reduced to 9000 for 27 pixels
+Analyze2.adjustSpectraScale(int,float)
+input scale size value      1525 967.6189943999999
+outputNmMaxValue            963
+nmPerPixel                  0.6349206
+inputNmppLowDecrementFactor 0.3174603
+  slit peak reduced to 9000 for 29 pixels
+Analyze2.subtractSpectra[]()
+Analyze2.subtractSpectra[]()
+Analyze2.subtractSpectra[]()
+Spectrum.cuvetteLightOff(runOnPi=true)
+spectrum.turnOffActiveLED()
+Grapher.createChartPanel(sphereNormalizationRight,sphereNormalizationLeft)
+Grapher.XYSeries()
+Grapher.XYSeries()
+Spectrum.resetLogicSwitches()
+MyButtonHandler.actionPerformed(calibrate3)
+Spectrum.normalizeChambers3()
+Grapher.createChartPanel(sphereNormalization)
+Grapher.XYSeries()
+MyButtonHandler.actionPerformed(calibrate4)
+Spectrum.normalizeChambers4()
+Grapher.createChartPanel(zeroSpectrum)
+Grapher.XYSeries()
+MyButtonHandler.actionPerformed(calibrate5)
+Spectrum.normalizeChambers5()
+MyButtonHandler.actionPerformed(test)
+spectrum.testSample()
+Spectrum.cuvetteLightOn(runOnPi=true)
+spectrum.turnOnActiveLED()
+Analyze2.imageSample(xxx)
+Analyze2.invokeCommand(xxx_20250805_172846.dat,60000
+Analyze2.invokeCommand([./cam1.py, xxx_20250805_172846.dat, 60000, true])
+  return code is: 0
+Spectrum.cuvetteLightOff(runOnPi=true)
+spectrum.turnOffActiveLED()
+Analyze2.analyzeSample()
+Analyze2.readSpectra(xxx_20250805_172846.dat)
+Analyze2.readSpectraB(xxx_20250805_172846.dat)
+Analyze2.deleteImageFile(xxx_20250805_172846.dat)
+Analyze2.subtractSpectra[][]()
+Analyze2.sumSpectrum(int[], 110,  150)
+  writing spectraSum110.dat
+l r s lengths1525 1525 1520
+Analyze2.sumSpectrum(int[], 950,  990)
+  writing spectraSum950.dat
+Analyze2.alignSpectra()
+Analyze2.adjustSpectraScale(int,float)
+input scale size value      1525 967.6189943999999
+outputNmMaxValue            963
+nmPerPixel                  0.6349206
+inputNmppLowDecrementFactor 0.3174603
+  slit peak reduced to 8000 for 23 pixels
+Analyze2.adjustSpectraScale(int,float)
+input scale size value      1525 967.6189943999999
+outputNmMaxValue            963
+nmPerPixel                  0.6349206
+inputNmppLowDecrementFactor 0.3174603
+  slit peak reduced to 9000 for 32 pixels
+Analyze2.subtractSpectra[]()
+Analyze2.absorbtionAdjust(
+  adjustment factor is 37
+Analyze2.subtractSpectra[]()
+Grapher.createChartPanel(testLastRight,testLastLeft)
+Grapher.XYSeries()
+Grapher.XYSeries()
+Grapher.saveChart(xxx_20250805_172846Raw)
+MyButtonHandler.actionPerformed(test2)
+Spectrum.testSample2()
+Grapher.saveChart(xxx_20250805_172846)
+Grapher.createChartPanel(xxx_20250805_172846)
+Grapher.XYSeries()
+Grapher.addChartLabel()
+MyButtonHandler.actionPerformed(test3)
+Spectrum.testSample3()
+Spectrum.resetLogicSwitches()
+MyButtonHandler.actionPerformed(chambers)
+Spectrum.normalizeChambers()
+Spectrum.cuvetteLightOff(runOnPi=true)
+spectrum.turnOffActiveLED()
+Analyze2.getDarkFrame()
+Analyze2.invokeCommand(darkFrame20250805_172928.dat,60000
+Analyze2.invokeCommand([./cam1.py, darkFrame20250805_172928.dat, 60000, true])
+  return code is: 0
+Analyze2.readSpectra(darkFrame20250805_172928.dat)
+Analyze2.readSpectraB(darkFrame20250805_172928.dat)
+Analyze2.deleteImageFile(darkFrame20250805_172928.dat)
+Spectrum.cuvetteLightOn(runOnPi=true)
+spectrum.turnOnActiveLED()
+Analyze2.calibrateSpheres() tracer2=false
+Analyze2.invokeCommand(sphereNormalization20250805_172931.dat,60000
+Analyze2.invokeCommand([./cam1.py, sphereNormalization20250805_172931.dat, 60000, true])
+  return code is: 0
+Analyze2.readSpectra(sphereNormalization20250805_172931.dat)
+Analyze2.readSpectraB(sphereNormalization20250805_172931.dat)
+Analyze2.deleteImageFile(sphereNormalization20250805_172931.dat)
+Analyze2.subtractSpectra[][]()
+Analyze2.sumSpectrum(int[], 110,  150)
+  writing spectraSum110.dat
+Analyze2.sumSpectrum(int[], 950,  990)
+  writing spectraSum950.dat
+Analyze2.alignSpectra()
+nmScaleLength valueEnd 1525 966.9840737999999 967.6189943999999
+Analyze2.adjustSpectraScale(int,float)
+input scale size value      1525 967.6189943999999
+outputNmMaxValue            963
+nmPerPixel                  0.6349206
+inputNmppLowDecrementFactor 0.3174603
+  slit peak reduced to 8000 for 22 pixels
+Analyze2.adjustSpectraScale(int,float)
+input scale size value      1525 967.6189943999999
+outputNmMaxValue            963
+nmPerPixel                  0.6349206
+inputNmppLowDecrementFactor 0.3174603
+  slit peak reduced to 9000 for 25 pixels
+Analyze2.subtractSpectra[]()
+Analyze2.subtractSpectra[]()
+Analyze2.subtractSpectra[]()
+Spectrum.cuvetteLightOff(runOnPi=true)
+spectrum.turnOffActiveLED()
+Grapher.createChartPanel(sphereNormalizationRight,sphereNormalizationLeft)
+Grapher.XYSeries()
+Grapher.XYSeries()
+Spectrum.resetLogicSwitches()
+MyButtonHandler.actionPerformed(calibrate3)
+Spectrum.normalizeChambers3()
+Grapher.createChartPanel(sphereNormalization)
+Grapher.XYSeries()
+MyButtonHandler.actionPerformed(calibrate4)
+Spectrum.normalizeChambers4()
+Grapher.createChartPanel(zeroSpectrum)
+Grapher.XYSeries()
+MyButtonHandler.actionPerformed(calibrate5)
+Spectrum.normalizeChambers5()
+MyButtonHandler.actionPerformed(quit)
+spectrum.userRequestedShutdown()
