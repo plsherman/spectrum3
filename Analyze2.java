@@ -22,6 +22,7 @@ Date		Who	Activity
 2025/05/14	PLS	delete zeroing slit in graph, limit slit peak  ~line 1000
 2025/05/25	PLS	relocate slit location for new camera w/o IR filter
 2025/09/14	PLS	move slit & maybe adjust dispersion constants
+2025/11/18  PLS add header comments documenting spectrum3 laser wavelengths
 
 DataBuffer type codes
 0 Byte
@@ -30,6 +31,11 @@ DataBuffer type codes
 3 Int
 4 Float
 5 Double
+
+Laser wavelengths - November 2025
+red		650nm
+green	532nm
+blue	450nm
 
 */
 import java.awt.*;
