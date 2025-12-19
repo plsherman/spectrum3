@@ -115,7 +115,7 @@ public class Analyze2 {
 			 ,graphMaxNm = (int)(spectrumColumns*nmPerPixelLeft)+2 // 2 for ends
 			 ;
 
-public static int  exposureCuvette = 60000
+public static int  exposureCuvette = 2000  // 60000
 		,exposureFibreIlluminated = exposureCuvette
 		,exposureFibreNaturalLight = exposureCuvette
 		,exposureCurrent = exposureCuvette
