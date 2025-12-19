@@ -42,10 +42,12 @@ if numParms > 2:
 else:
   expTime = expTime+str(expTimeDefault)
   print("No time parameter passed, using default:",expTimeDefault,"microseconds")
-if numParms > 3:
-  timeout = "--timeout="+sys.argv[3]+"sec"
 if numParms > 4:
+  timeout = "--timeout="+sys.argv[3]+"sec"
+if numParms > 3:
   tracer = True
+if fn2.endswith(".out"):
+  encoding="--encoding=yuv420" 
 
 if tracer:
   print('subprocess.run(["rpicam-still"',fn1,fn2,expTime,width,height,roi,encoding,denoise,quality,timeout,awb,']')
