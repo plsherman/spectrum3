@@ -43,10 +43,11 @@ else:
   expTime = expTime+str(expTimeDefault)
   print("No time parameter passed, using default:",expTimeDefault,"microseconds")
 if numParms > 4:
-  timeout = "--timeout="+sys.argv[3]+"sec"
+  timeout = "--timeout="+sys.argv[4]+"sec"
+  print("timeout is: "+timeout)
 if numParms > 3:
   tracer = True
-if fn2.endswith(".out"):
+if fn2.endswith(".dat"):
   encoding="--encoding=yuv420" 
 
 if tracer:
