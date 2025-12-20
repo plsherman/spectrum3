@@ -1,4 +1,4 @@
-cd /home/spectrum/gitRepos/Spectrum2
+cd /home/spectrum/gitRepos/Spectrum3
 pi4j -r Spectrum3
 # echo ""
 # echo ""

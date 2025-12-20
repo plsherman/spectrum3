@@ -37,6 +37,8 @@ red		650nm
 green	532nm
 blue	450nm
 
+trace2 file names (use ln -s ):  darkFrame.dat, normalizeLight.dat
+
 */
 import java.awt.*;
 import java.awt.event.*;
@@ -87,15 +89,20 @@ public class Analyze2 {
 
 // ****** Diagnostic/test parameters  ********
 
- static int[]    spectraLocLeft ={110,80,150,1520}	// ******** X2 <> colsIn *****
-	            	,spectraLocRight={950,80,990,1520};
+ static int[]    spectraLocLeft ={110,70,150,1510}	// ******** X2 <> colsIn *****
+	            	,spectraLocRight={950,70,990,1510};
 
- static int	 zeroPointLeft  =  2	// displacement from loc to center of slit
-	         	,zeroPointRight =  4;	// 7 original
-
+ static int	 zeroPointLeft  =  18	// displacement from loc to center of slit
+	         	,zeroPointRight =  6;	// 7 original
+/*
  static double   nmPerPixelLeft  = 0.6349206
 	            ,nmPerPixelRight = 0.6349206	// calc value 0.6349206	old:630
                 ;
+*/
+ static double   nmPerPixelLeft  = 0.689028279		// 110 group
+	            ,nmPerPixelRight = 0.687716601		// 950 group
+                ;
+
 
 // ****** diagnostic parameters end  ******
 
