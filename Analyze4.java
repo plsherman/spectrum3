@@ -166,10 +166,10 @@ public static int[]	 spectrumSumLeft = new int[spectrumColumnsDefinition]
  public static final String	 fileNameCuvette="cuvette.parameters"
 				,fileNameProbe="fibre.parameters"
 				;
-public Analyze2()
+public Analyze4()
  {init();}
 
-public Analyze2(String[] tracers)
+public Analyze4(String[] tracers)
  {setTraceParms(tracers);
   init();
  }
